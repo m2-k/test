@@ -46,7 +46,7 @@ const WhyChooseAndContactForm = () => {
             visitTime: new Date().toISOString(),
           };
   
-          await fetch("http://localhost:5000/notify-admin", {
+          await fetch("https://test-seven-xi-45.vercel.app/", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(visitData),
@@ -81,7 +81,7 @@ const WhyChooseAndContactForm = () => {
   
     setIsSubmitting(true);
   
-    fetch('http://localhost:5000/send-email', {
+    fetch('https://test-seven-xi-45.vercel.app/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
